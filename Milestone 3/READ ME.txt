@@ -1,0 +1,50 @@
+Group Members: 
+Jordan Riley - Adding Comparables/Video - 2 hours
+Trevor Moore - Adding Comparables/Video - 2 hours
+Antonio Jabrail - Adding Comparables/Video - 2 hours
+
+This is all of our own work, we did not use the internet nor did
+we use the learning lounge to help produce our code.
+
+Description of Deliverables: 
+
+Dispenser Class - Paramaters/Constuctors/Methods of Dispenser
+Product Class - Paramaters/Constuctors/Methods of Product
+Candy Class - Paramaters/Constuctors/Methods of Candy
+Chips Class - Paramaters/Constuctors/Methods of Chips
+Drink Class - Paramaters/Constuctors/Methods of Drink
+Driver Class - Paramaters/Constuctors/Methods of Driver
+Gum Class - Paramaters/Constuctors/Methods of Gum
+Snack Class - Paramaters/Constuctors/Methods of Snack
+
+CLC Dispenser Project:
+For our project, we thought out what a person can do once they walk up
+to a physical vending machine. We did our best to implement such actions
+as methods into our vending machine class, such as inputMoney(), viewProduct(),
+buyProduct(), and printReceipt(). We made sure to name our variables and
+methods in an easy to read and self-documenting way.
+
+We implemented a comparable interface to our snack and drink class that compares
+one object to another based on alphabetic order of the names and also the prices.
+
+
+How-To-Use:
+In order to use our code, you must first copy our code into Java (copy
+each respective file into new Java classes in the same package). Then,
+you must go into the Dispenser class, scroll down to the constructor
+with no arguments, identify how many indexes will be in the Product
+array, and instantiate whichever product you would
+like into the for loop (whether it be Drink, Snack, Gum, Chips, or
+Candy). Once you have done that, navigate to the Driver class, and
+create a new dispenser. To test and make sure that you have correctly
+instantiated your products, call the displayProducts() method on your
+newly created Dispenser. The type of product, name of product,
+description of product, and price of product should be printed in the
+console for each product that was instantiated in the Dispenser class.
+
+Screencast useloom link:
+
+
+Bitbucket link:
+https://github.com/jriley15/CST-236/tree/master/Milestone%203
+
