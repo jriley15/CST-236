@@ -1,0 +1,61 @@
+td {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+form input[type="text"] {
+    width: 100%;
+}
+
+
+#admin-wrapper {
+    padding-top: 20px;
+    width: 40%;
+    padding-bottom: 20px;
+
+
+}
+#user-wrapper {
+    background-color: black;
+    opacity: .8;
+    padding: 10px;
+
+}
+
+
+.profile table {
+    border-collapse:separate;
+    border-spacing:40px 5px;
+
+
+}
+
+
+.card table {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.border {
+    border: 1px solid white;
+}
+
+
+
+tr {
+    text-align: center;
+    color: white;
+
+
+}
+
+
+th {
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}

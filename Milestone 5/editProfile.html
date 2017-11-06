@@ -1,0 +1,148 @@
+<html>
+
+    <head>
+
+        <script>
+            var cards = <?php echo json_encode($cards); ?>;
+        </script>
+
+        <script type="text/javascript" src="js/select-card.js"></script>
+
+        <LINK REL=StyleSheet HREF="css/profile.css?<?php echo time(); ?>">
+        <?php include "navBar.php"; ?>
+
+    </head>
+    <body>
+
+
+    <div class="center">
+    <div id="admin-wrapper">
+        <div id="user-wrapper">
+            <h2>Profile Management</h2>
+
+            <div class="op">
+                <?php
+
+                if (isset($operation)) {
+                    echo $operation;
+                }
+
+            ?>
+            </div>
+
+            <form name="modifyUser" action="" method="POST">
+                <div class="profile">
+                <table align="center">
+
+                    <tr>
+                        <td>
+                            <b>ID</b>
+                        </td>
+                        <td>
+                            <?php echo $account->getUserId();?>
+                            <input name="userID" type="hidden" value="<?php echo $account->getUserId();?>"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Email</b>
+                        </td>
+                        <td>
+                            <?php echo $account->getEmail();?>
+                            <input name="email" type="hidden" class="inputfield" value="<?php echo $account->getEmail();?>"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Password</b>
+                        </td>
+                        <td>
+                            <input name="password" type="text" class="inputfield" size="15" style="width:150px" value="<?php echo $account->getPassword();?>"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>First name</b>
+                        </td>
+                        <td>
+                            <input name="firstName" type="text" class="inputfield" size="15" style="width:150px" value="<?php echo $account->getFirstname();?>"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Last name</b>
+                        </td>
+                        <td>
+                            <input name="lastName" type="text" class="inputfield" size="15" style="width:150px" value="<?php echo $account->getLastname();?>"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Rights</b>
+                        </td>
+                        <td>
+                            <?php echo $account->getRights();?>
+                            <input name="rights" type="hidden"size="1" style="width:20px" class="inputfield" value="<?php echo $account->getRights();?>"/>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+
+                    <div class="card">
+                        <table align="center">
+                        <tr>
+                            <td>
+                                <b>Add/Edit Card</b>
+                            </td>
+                            <td>
+
+                                <?php include '_editCardForm.php'; ?>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Full Name
+                            </td>
+                            <td>
+                                <input name="ccName" size="30" style="width:150px" type="text" class="inputfield" value="<?php echo $name; ?>"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Number
+                            </td>
+                            <td>
+                                <input name="ccNumber" size="16" style="width:150px" type="text" class="inputfield" value="<?php echo $number; ?>"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Expiration Date
+                            </td>
+                            <td>
+                                <input name="ccExpiration" style="width:150px" type="date" class="inputfield" value="<?php echo $date; ?>"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                CCV
+                            </td>
+                            <td>
+                                <input name="ccCCV" size="3" style="width:30px" type="text" class="inputfield" value="<?php echo $ccv; ?>"/>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+
+                <br>
+                <input type="submit" value="Save changes" />
+
+            </form>
+
+
+        </div>
+    </div>
+    </div>
+    </body>
+</html>
